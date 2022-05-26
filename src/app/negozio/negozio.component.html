@@ -1,0 +1,9 @@
+<h2>Elementi</h2>
+<div *ngFor="let prodotto of prodotti">
+    <app-prodotto [prodotto]="prodotto" (clickProdotto)="aggiungiProdottoCliccato($event)"></app-prodotto>
+</div>
+
+<br>
+<br>
+
+<app-carrello [elementi]="carrello"></app-carrello>
